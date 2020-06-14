@@ -3,7 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
     <title>Simple ToDo</title>
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <div class="display-4">The Get Sh*t Done List!</div>
+      <div
+        class="alert alert-danger col-6"
+        id="message"
+        style="display: none;"
+      ></div>
+
+      <div class="text-info col-6">
+        <input
+          type="text"
+          placeholder="What Sh*t Do We Need To Do?"
+          id="toDoItem"
+          class="form-control"
+          /></br>
+          <button onclick="addItem()" class="btn btn-sm btn-primary">
+          <span class="fa fa-plus">Add this Sh*t</span>
+          </button>
+      </div>
+
+      <div>
+        <ul class="list-group list-group-flush" id="todo-list"></ul>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
